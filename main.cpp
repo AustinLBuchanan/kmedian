@@ -6,7 +6,9 @@ int main(int argc, char *argv[])
 {
 	if (argc < 3) 
 	{
-		cout << "\t Computes LP and Lagrangian bounds for random k-median instance on n points." << endl;
+		cout << "\t Codes for solving random k-median instance on n points." << endl;
+    cout << "\t Solves LP relaxation and then finds IP optimal solution (with Gurobi)." << endl;
+    cout << "\t Solves Lagrangian bound (with Shor's r-algorithm) and performs Lagrangian-based B&B." << endl;
 		cout << "\t Usage: n k " << endl;
 		return 0;
 	}
